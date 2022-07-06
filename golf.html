@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Golf Score Keeper</title>
+</head>
+<body>
+
+    <!-- NAV BAR FROM BULMA -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="images/FairSquareLong_icon.jpg" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="about.html">
+              About
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Sports
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="simple.html">
+                    Simple
+                  </a>
+                  <a class="navbar-item" href="soccer.html">
+                    Soccer
+                  </a>
+                  <a class="navbar-item" href="football.html">
+                    Football (US)
+                  </a>
+                  <a class="navbar-item" href="basketball.html">
+                    Basketball
+                  </a>
+                  <a class="navbar-item" href="tennis.html">
+                    Tennis
+                  </a>
+                  <a class="navbar-item" href="volleyball.html">
+                    Volleyball
+                  </a>
+                  <a class="navbar-item" href="hockey.html">
+                    Hockey
+                  </a>
+                  <a class="navbar-item" href="cornhole.html">
+                    Cornhole
+                  </a>
+                  <a class="navbar-item" href="golf.html">
+                    Golf
+                  </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- LOGIN AND SIGN UP NOT IN USE YET -->
+
+          <!-- <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </nav>
+
+    <!--CARD TEMPLATE FROM BULMA, INSIDE COLUMNS-->
+
+        <!-- GOLF SCORE KEEPER IDEAS/IMPROVEMENTS FOR SCALING:
+        - Change points to strokes
+        - Stroke options - 1 (possibly specify true stroke, ball drop, mulligan)
+        - Eliminate "Playing To" form field
+        - Choose how many players
+        - Choose 9 or 18 holes
+        - Choose which tee box each player is playing from?
+        - Set handicap per player?
+        - Optional - set par (per hole? for whole game?)
+        - Implement END OF GAME button that disables stroke buttons and displays final score
+    -->
+    
+    <section class="section"> <!-- for spacing -->
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.3AZIZlf8jUC38RcGOizG6gHaEK%26pid%3DApi&f=1" alt="Golf Ball on Tee">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                            Golf Score Keeper
+                            </p>
+                        </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="p1display">0</span> to <span id="p2display">0</span></h1>
+                            <p class="subtitle">Use the buttons below to keep score.</p>
+                        </div>
+
+                        <label for="playto" class="label is-large is-inline">Playing to</label>
+                        <div class="select is-rounded">
+                            <select name="" id="playto">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1button" class="button is-primary card-footer-item is-large">+1 Player 1</button>
+                        <button id="p2button" class="button is-info card-footer-item is-large">+1 Player 2</button>
+                        <button id="reset" class="button is-danger card-footer-item is-large">Reset</button>
+                    </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>

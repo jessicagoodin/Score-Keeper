@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/ee368b8e27.js" crossorigin="anonymous"></script>
     <title>Soccer Score Keeper</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="#">
-            <img src="images/FairSquareLong_icon.jpg" width="112" height="28">
+            <img src="images/FairSquareSmall_icon.jpeg" width="112" height="28">
           </a>
       
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -119,11 +120,11 @@
                         </header>
                     <div class="card-content">
                         <div class="content">
-                            <h1 class="title is-1"><span id="p1display">0</span> to <span id="p2display">0</span></h1>
+                            <h1 class="title is-1"><span id="t1display">0</span> to <span id="t2display">0</span></h1>
                             <p class="subtitle">Use the buttons below to keep score.</p>
                         </div>
 
-                        <label for="playto" class="label is-large is-inline">Playing to</label>
+                        <!-- <label for="playto" class="label is-large is-inline">Playing to</label>
                         <div class="select is-rounded">
                             <select name="" id="playto">
                                 <option value="3">3</option>
@@ -135,14 +136,21 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                             </select>
-                        </div>
+                        </div> -->
+
                     </div>
                     <footer class="card-footer">
-                        <button id="p1button" class="button is-primary card-footer-item is-large">+1 Player 1</button>
-                        <button id="p2button" class="button is-info card-footer-item is-large">+1 Player 2</button>
+                        <button id="t1button" class="button is-primary card-footer-item is-large">+1 Team 1</button>
+                        <button id="t2button" class="button is-info card-footer-item is-large">+1 Team 2</button>
                         <button id="reset" class="button is-danger card-footer-item is-large">Reset</button>
-                    </footer>
+                      </footer>
                     </div>
+                      
+                    <!-- issues: endgame button displays below others, is not centered. -->
+                    <div>
+                      <button id="endgame" class="button is-warning is-large">End of Game</button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -150,6 +158,6 @@
     
 
 
-    <script src="app.js"></script>
+    <script src="team.js"></script>
 </body>
 </html>

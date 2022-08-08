@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/ee368b8e27.js" crossorigin="anonymous"></script>
     <title>Fair + Square Score Keepers</title>
 </head>
 <body>
@@ -97,7 +98,7 @@
 
       <section class="hero is-success is-halfheight">
         <div class="hero-body">
-          <div class="">
+          <div class="container has-text-centered">
             <p class="title">
               Welcome to the Fair + Square App!
             </p>
@@ -108,6 +109,37 @@
         </div>
       </section>
 
+      <footer>
+
+        <!-- SOCIALS -->
+
+        <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon is-large has-text-success">
+                    <i class="fa-brands fa-instagram fa-2x" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-large has-text-success">
+                    <i class="fa-brands fa-facebook-square fa-2x" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon is-large has-text-success">
+                    <i class="fa-brands fa-twitter-square fa-2x" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </footer>
+
       <!-- IDEAS FOR IMPROVEMENT/SCALING FOR ALL SCORE KEEPERS:
         - Ability to change player/team colors
         - Dark mode that stays selected no matter which keeper you switch to
@@ -115,8 +147,10 @@
         - Full screen (app style)? Or just making mobile app rather than web app?
         - Button to undo point add, in case the wrong one is selected
         - After login, people can add each other and score the same game in real time
-            - If in same game, option to turn "verify" on or off where score must be verified by other team before it posts
-      -->
+            - If in same game, option to turn "verify" on or off where score must be verified by other team before it
+      
+        ** Creating new js files for each sport that has different point system/functionality. All that just have 1 score will have team card (which is simple but with teams instead of players)
+          -->
 
     <script src="app.js"></script>
 </body>
